@@ -12,8 +12,6 @@ body{
     margin: 0;
     padding: 0;
     color: #4D4E53;
-    /* color: #fff; */
-
 }
 
 .wrapper{
@@ -48,7 +46,6 @@ code {
     background-color: #F7F7F7;
     display: block;
     white-space: pre;
-    /* padding: 2rem; */
     font-size: 1.5rem;
     overflow: auto;
     box-shadow: 0 .5rem 2rem rgba(0, 0,0, 0.2);
@@ -58,10 +55,6 @@ li{
     padding: 1rem
 }
 
-
-
-/* nav */
-
 aside{
     background-color: #197BF3;
     height: 100vh;
@@ -69,7 +62,6 @@ aside{
     position: fixed;
     top: 0;
     left: 0;
-    /* overflow: hidden; */
     transition: all .6s ;
 }
 
@@ -78,11 +70,6 @@ aside{
     text-align: center;
     padding: 2rem;
     border-bottom: 7px solid #fff;
-    /* border-radius: 10px; */
-    /* background-color: rgb(12, 144, 221); */
-    /* color: rgb(12, 144, 221); */
-    /* background: #fff; */
-    /* border: 3px solid #0c3cc0; */
     color: #fff;
 }
 
@@ -90,20 +77,16 @@ aside{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
 }
 
 .nav-item{
     font-size: 2.3rem;
     padding: 0;
     transition: all .6s;
-    /* background-color: #2D4DE8; */
 }
 
 .nav-item:not(:last-child){
-    /* border-bottom: 3px solid rgb(10, 182, 224); */
     border-bottom:  3px solid #fff;
-    /* border-bottom: 3px solid #fff; */
 }
 
 .nav-link{
@@ -111,9 +94,7 @@ aside{
     color: #fff;
     width: 100%;
     display: block;
-    /* color: #fff; */
     font-weight: bold;
-    /* background-color: #4D4E53; */
     padding: 1.4rem 3rem;
 }
 
@@ -122,14 +103,11 @@ aside{
 }
 
 .nav-item:hover {
-    /* background: rgb(20, 120, 252); */
     background-color: #fff;
     color: rgb(20, 120, 252);
-    /* margin-right: 10px; */
     transform: translateX(20px) ;
     box-shadow: 1rem 1rem 2rem rgba(68, 67, 67, 0.322);
 }
-
 
 .navbar__icon{
     margin: 10px;
@@ -184,7 +162,6 @@ aside{
 
     aside{
         width: 30rem;
-        /* border-right: 2px solid rgb(75, 75, 75); */
     }
 
     #navbar header{
@@ -200,7 +177,6 @@ aside{
         border-bottom:  1px solid #fff;
     }
     
-
 }
 
 
@@ -226,9 +202,7 @@ aside{
     }
 
     .nav-item:not(:last-child){
-        /* border-bottom: 3px solid rgb(10, 182, 224); */
         border-bottom:  3px solid rgb(233, 233, 233)
-        /* border-bottom: 3px solid #fff; */
     }
 
     #navbar header{
@@ -245,7 +219,6 @@ aside{
         font-size: 8.9px;
     }
 
-    
     main{
         padding: 3rem 0;
     }
