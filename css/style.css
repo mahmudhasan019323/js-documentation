@@ -1,0 +1,266 @@
+:root{
+    font-size: 10px;
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.9rem;
+    margin: 0;
+    padding: 0;
+    color: #4D4E53;
+    /* color: #fff; */
+
+}
+
+.wrapper{
+    display: flex;
+    margin-left: 42rem; 
+}
+
+main{
+    padding: 3rem 1.5rem 3rem 2rem;
+    max-width: 100%;
+}
+
+article{
+    padding: 1rem;
+}
+
+header {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: rgb(16, 123, 247);
+    font-weight: bold;
+}
+
+p{
+    margin-left: 1rem
+}
+
+
+code {
+    margin-left: 2.5rem;
+    border-radius: 1rem 0 1rem 0;
+    background-color: #F7F7F7;
+    display: block;
+    white-space: pre;
+    /* padding: 2rem; */
+    font-size: 1.5rem;
+    overflow: auto;
+    box-shadow: 0 .5rem 2rem rgba(0, 0,0, 0.2);
+}
+
+li{
+    padding: 1rem
+}
+
+
+
+/* nav */
+
+aside{
+    background-color: #197BF3;
+    height: 100vh;
+    width: 40rem; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* overflow: hidden; */
+    transition: all .6s ;
+}
+
+#navbar header{
+    font-size: 3.4rem;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 7px solid #fff;
+    /* border-radius: 10px; */
+    /* background-color: rgb(12, 144, 221); */
+    /* color: rgb(12, 144, 221); */
+    /* background: #fff; */
+    /* border: 3px solid #0c3cc0; */
+    color: #fff;
+}
+
+.nav-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.nav-item{
+    font-size: 2.3rem;
+    padding: 0;
+    transition: all .6s;
+    /* background-color: #2D4DE8; */
+}
+
+.nav-item:not(:last-child){
+    /* border-bottom: 3px solid rgb(10, 182, 224); */
+    border-bottom:  3px solid #fff;
+    /* border-bottom: 3px solid #fff; */
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: block;
+    /* color: #fff; */
+    font-weight: bold;
+    /* background-color: #4D4E53; */
+    padding: 1.4rem 3rem;
+}
+
+.nav-link:hover{
+    color: rgb(20, 120, 252);
+}
+
+.nav-item:hover {
+    /* background: rgb(20, 120, 252); */
+    background-color: #fff;
+    color: rgb(20, 120, 252);
+    /* margin-right: 10px; */
+    transform: translateX(20px) ;
+    box-shadow: 1rem 1rem 2rem rgba(68, 67, 67, 0.322);
+}
+
+
+.navbar__icon{
+    margin: 10px;
+    cursor: pointer;
+    display: none;
+    width: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navbar__open{
+    width: 360px;
+    max-width: 100%;
+}
+
+
+.navbar__show{
+    display: block !important;
+}
+
+
+
+/* media query */
+
+
+@media only screen and (max-width: 1300px){
+    :root{
+        font-size: 9.5px;
+    }
+
+    aside{
+        width: 30rem;
+        /* border-right: 2px solid rgb(75, 75, 75); */
+    }
+
+    #navbar header{
+        padding: 3rem 1rem;
+        border-bottom: 4px solid #fff;
+    }
+
+    .wrapper{
+        margin-left: 30rem; 
+    }
+
+    .nav-item:not(:last-child){
+        border-bottom:  1px solid #fff;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 1100px){
+
+    .wrapper{
+        margin-left: 6rem
+    }
+
+    aside{
+        width: 6rem;
+        background: rgb(11, 92, 197);
+        padding-top: 2rem;
+        height: 100%;
+    }
+
+    .nav-link, #navbar header{
+        color: rgb(221, 221, 221);
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    .nav-item:not(:last-child){
+        /* border-bottom: 3px solid rgb(10, 182, 224); */
+        border-bottom:  3px solid rgb(233, 233, 233)
+        /* border-bottom: 3px solid #fff; */
+    }
+
+    #navbar header{
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .navbar__icon{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    :root{
+        font-size: 8.9px;
+    }
+
+    
+    main{
+        padding: 3rem 0;
+    }
+
+    aside{
+        overflow: auto;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    article{
+        text-align: justify;
+    }
+
+}
+
